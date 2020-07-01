@@ -1,1 +1,1 @@
-bot: python supura.py
+bot: python3 supura.py
