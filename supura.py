@@ -2,6 +2,7 @@ import discord
 import urllib.request
 import numpy as np
 import matplotlib.pyplot as plt
+import japanize_matplotlib
 
 urllib.request.urlretrieve('https://splatoon.caxdb.com/schedule2.cgi','origin.txt')
 import re
@@ -66,7 +67,7 @@ def main(input_str):
     #get 'fw_scraped_2.txt' : information about date and stages of the match that you want to play.
     #get dates[], stages[] : date-array and stages-array both has same length. these were made based on 'fw_scraped_2.txt'.
 
-    plt.rcParams['font.family'] ="MS Gothic"#font
+    plt.rcParams['font.family'] ='Hiragino Maru Gothic Pro'#font
 
     days = []
     colored_num = []
@@ -97,6 +98,8 @@ def main(input_str):
     y = np.array([1]*12)
 
     label = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
+
+    #igfont = {'family':'IPAexGothic'}
 
 
     plt.figure(figsize=(7, 8), dpi=95)
