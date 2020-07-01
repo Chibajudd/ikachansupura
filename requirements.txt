@@ -1,4 +1,3 @@
 discord.py
 matplotlib
 numpy
-urllib.request
