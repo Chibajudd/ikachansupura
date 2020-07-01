@@ -63,11 +63,10 @@ def main(input_str):
     fr_scraped_1.close()
     fw_scraped_2.close()
 
-
     #get 'fw_scraped_2.txt' : information about date and stages of the match that you want to play.
     #get dates[], stages[] : date-array and stages-array both has same length. these were made based on 'fw_scraped_2.txt'.
 
-    plt.rcParams['font.family'] ="Hiragino Sans"#font
+    plt.rcParams['font.family'] ="MS Gothic"#font
 
     days = []
     colored_num = []
